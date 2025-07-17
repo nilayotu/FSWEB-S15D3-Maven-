@@ -47,7 +47,7 @@ public class MainTest {
     public void testFindDuplicatesMethod() {
         List<Employee> list = Main.findDuplicates(employees);
         assertEquals(list.size(), 3);
-        assertEquals(list.get(0).getFirstname(), "Dogancan");
+        assertEquals(list.get(0).getFirstName(), "Dogancan");
     }
 
     @DisplayName("findUniques method doğru çalışıyor mu?")
@@ -55,7 +55,7 @@ public class MainTest {
     public void testFindUniquesMethod() {
         Map<Integer, Employee> map = Main.findUniques(employees);
         assertEquals(map.size(), 4);
-        assertEquals(map.get(1).getFirstname(), "Dogancan");
+        assertEquals(map.get(1).getFirstName(), "Dogancan");
     }
 
     @DisplayName("removeDuplicates method doğru çalışıyor mu?")
@@ -64,7 +64,7 @@ public class MainTest {
         List<Employee> list = Main.removeDuplicates(employees);
         System.out.println(list);
         assertEquals(list.size(), 1);
-        assertEquals(list.get(0).getFirstname(), "Burak");
+        assertEquals(list.get(0).getFirstName(), "Burak");
     }
 
     @DisplayName("calculatedWord method doğru çalışıyor mu?")
